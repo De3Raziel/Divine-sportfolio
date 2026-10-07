@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divine's Portfolio| Web Developer &amp; Web3 Enthusiast</title>
+<meta name="description" content="Portfolio of Divine Osas — Web Developer and Web3 Enthusiast building modern digital experiences.">
+
+<link rel="stylesheet" href="css/Portfolio.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+<canvas id="galaxy-canvas" aria-hidden="true"></canvas>
+<div class="nebula nebula-1" aria-hidden="true"></div>
+<div class="nebula nebula-2" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div id="scroll-progress" class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<header>
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-container">
+      <a href="#home" class="logo">Divine<span class="logo-dot">.</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#webdev" class="nav-link" data-section="webdev">Web Development</a></li>
+        <li><a href="#web3" class="nav-link" data-section="web3">Web3</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#journey" class="nav-link" data-section="journey">Journey</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-fade">Hello, I'm <span class="highlight">Divine</span></p>
+
+        <h1 class="hero-title reveal-fade">
+          Web Developer <span class="amp">&amp;</span> Web3 Enthusiast
+        </h1>
+
+        <div class="typing-wrap reveal-fade" aria-live="polite">
+          <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-description reveal-fade">
+          I build modern digital experiences at the intersection of web development, blockchain, and emerging technology.
+        </p>
+
+        <div class="hero-buttons reveal-fade">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+        </div>
+
+        <div class="status-badge reveal-fade">
+          <span class="status-dot"></span>
+          Available for Opportunities
+        </div>
+      </div>
+
+      <div class="hero-avatar reveal-fade">
+        <div class="avatar-ring">
+          <div class="avatar-ring-2"></div>
+          <img src="images/3D Me.jpg" alt="Portrait of Divine" class="avatar-img">
+        </div>
+        <div class="orbit-dot orbit-dot-1"></div>
+        <div class="orbit-dot orbit-dot-2"></div>
+      </div>
+    </div>
+    <button class="scroll-indicator" id="scroll-down" aria-label="Scroll to About section">
+      <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+    </button>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-image-frame">
+            <img src="images/mech profile-1.jpg" alt="Divine working at a desk" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="about-paragraph">
+            I'm a passionate web developer with a growing curiosity for Web3 and decentralized technology.
+            I enjoy turning ideas into clean, responsive, and interactive digital experiences using modern
+            front-end tools and techniques.
+          </p>
+          <p class="about-paragraph">
+            Alongside traditional web development, I've been exploring the world of blockchain — from how
+            decentralized applications work to how on-chain data tells a story. I'm driven by curiosity and
+            a constant desire to keep learning.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">&lt;/&gt;</div>
+              <h3>Web Development</h3>
+              <p>Building responsive websites, interactive interfaces, landing pages, and modern web applications.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">◈</div>
+              <h3>Web3</h3>
+              <p>Exploring blockchain technology, decentralized applications, crypto ecosystems, and on-chain data.</p>
+            </div>
+          </div>
+
+          <div class="about-goals">
+            <p><strong>Currently learning:</strong> Backend development, on-chain analytics, and Web3 UX patterns.</p>
+            <p><strong>Goal:</strong> Build products that merge thoughtful design with meaningful technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-columns">
+        <div class="skills-group reveal-left">
+          <h3 class="skills-group-title">Web Development</h3>
+          <div class="skills-grid">
+            <div class="skill-card"><span class="skill-icon">◆</span><span>HTML</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>CSS</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>JavaScript</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>Responsive Design</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>UI Development</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>Site Optimization</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>Git / GitHub</span></div>
+            <div class="skill-card"><span class="skill-icon">◆</span><span>Basic Backend Dev</span></div>
+          </div>
+        </div>
+
+        <div class="skills-group reveal-right">
+          <h3 class="skills-group-title">Web3</h3>
+          <div class="skills-grid">
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>Blockchain Fundamentals</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>Cryptocurrency</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>DeFi</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>Web3 Ecosystems</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>dApps</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>On-chain Analytics</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>Community Management</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>Crypto Research</span></div>
+            <div class="skill-card skill-card-alt"><span class="skill-icon">◈</span><span>Project Analysis</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="webdev" class="section">
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">Craft</span>
+        <h2 class="section-title">Building for the Web</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="webdev-layout">
+        <div class="webdev-cards">
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">▣</div>
+            <h3>Responsive Design</h3>
+            <p>Websites that adapt smoothly to desktop, tablet, and mobile screens.</p>
+          </div>
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">✦</div>
+            <h3>Interactive Experiences</h3>
+            <p>Modern interfaces with JavaScript-powered interactions and animations.</p>
+          </div>
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">⌁</div>
+            <h3>Clean Code</h3>
+            <p>Organized HTML, CSS, and JavaScript that is easy to understand and maintain.</p>
+          </div>
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">◫</div>
+            <h3>Modern Interfaces</h3>
+            <p>Professional layouts focused on usability, visual hierarchy, and engaging experiences.</p>
+          </div>
+        </div>
+
+        <div class="browser-mock reveal-right" aria-hidden="true">
+          <div class="browser-bar">
+            <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+          </div>
+          <div class="browser-body">
+            <div class="code-line"><span class="code-tag">&lt;div</span> <span class="code-attr">class</span>=<span class="code-str">"galaxy"</span><span class="code-tag">&gt;</span></div>
+            <div class="code-line code-indent"><span class="code-tag">&lt;h1&gt;</span>Hello, Universe<span class="code-tag">&lt;/h1&gt;</span></div>
+            <div class="code-line code-indent"><span class="code-key">function</span> <span class="code-fn">launch</span>() {</div>
+            <div class="code-line code-indent-2"><span class="code-key">return</span> <span class="code-str">'liftoff'</span>;</div>
+            <div class="code-line code-indent">}</div>
+            <div class="code-line"><span class="code-tag">&lt;/div&gt;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="web3" class="section section-web3">
+    <div class="orbit-ring orbit-ring-1" aria-hidden="true"></div>
+    <div class="orbit-ring orbit-ring-2" aria-hidden="true"></div>
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">Frontier</span>
+        <h2 class="section-title">Exploring Web3</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="web3-grid">
+        <div class="web3-card reveal-up"><div class="web3-icon">⬡</div><h3>Blockchain</h3><p>Understanding decentralized networks and blockchain fundamentals.</p></div>
+        <div class="web3-card reveal-up"><div class="web3-icon">⬢</div><h3>DeFi</h3><p>Exploring decentralized finance and its ecosystem.</p></div>
+        <div class="web3-card reveal-up"><div class="web3-icon">◎</div><h3>Crypto</h3><p>Researching cryptocurrency ecosystems, tokens, and market activity.</p></div>
+        <div class="web3-card reveal-up"><div class="web3-icon">⛓</div><h3>On-Chain</h3><p>Exploring blockchain data, transactions, wallets, and on-chain activity.</p></div>
+        <div class="web3-card reveal-up"><div class="web3-icon">◇</div><h3>dApps</h3><p>Understanding decentralized applications and Web3 user experiences.</p></div>
+        <div class="web3-card reveal-up"><div class="web3-icon">✧</div><h3>Web3 Communities</h3><p>Understanding how Web3 communities grow, communicate, and operate.</p></div>
+      </div>
+    </div>
+  </section>
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">Work</span>
+        <h2 class="section-title">Personal Projects</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="filter-bar reveal-up" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="webdev" role="tab" aria-selected="false">Web Development</button>
+        <button class="filter-btn" data-filter="web3" role="tab" aria-selected="false">Web3</button>
+        <button class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">JavaScript</button>
+        <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">UI/Design</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card" data-category="webdev design">
+          <div class="project-image"><img src="images/Screenshot2026-09-16 152814.png" alt="Screenshot of the Divine Concept Bakery website" loading="lazy"></div>
+          <div class="project-body">
+            <h3>Divine Concept Bakery</h3>
+            <p>A responsive bakery and baking-materials website built using HTML, CSS, and JavaScript.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="C:\Users\DIVINE\Documents\Projects\Divine Concept bakery\Divine Concept Bakery.html" class="project-link">View Project</a>
+              <a href="#" class="project-link project-link-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web3 design">
+          <div class="project-image"><img src="images/project2.jpg" alt="Screenshot of the Web3 Dashboard interface" loading="lazy"></div>
+          <div class="project-body">
+            <h3>Web3 Dashboard</h3>
+            <p>A futuristic cryptocurrency dashboard interface demonstrating Web3-style UI and data presentation.</p>
+            <div class="project-tags"><span>JavaScript</span><span>CSS</span><span>Web3 UI</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project</a>
+              <a href="#" class="project-link project-link-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="webdev javascript design">
+          <div class="project-image"><img src="images/project3.jpg" alt="Screenshot of this developer portfolio" loading="lazy"></div>
+          <div class="project-body">
+            <h3>Developer Portfolio</h3>
+            <p>A personal portfolio demonstrating responsive design, JavaScript interactions, and modern UI techniques.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#" class="project-link">View Project</a>
+              <a href="#" class="project-link project-link-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey" class="section section-alt">
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">Path</span>
+        <h2 class="section-title">My Journey</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021</span>
+            <h3>Started Web Development</h3>
+            <p>Discovered the world of building things for the web and started experimenting.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022</span>
+            <h3>Learned HTML &amp; CSS</h3>
+            <p>Built a strong foundation in structuring and styling web pages.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3>Started JavaScript</h3>
+            <p>Began adding interactivity and logic to web projects.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Began Exploring Web3</h3>
+            <p>Started learning blockchain fundamentals and decentralized concepts.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-left">
+          <div class="timeline-node"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3>Built Personal Projects</h3>
+            <p>Applied my skills to real, self-directed builds and experiments.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-node timeline-node-current"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Now</span>
+            <h3>Currently Learning</h3>
+            <p>Exploring on-chain analytics, backend development, and Web3 UX.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exploring-wrap reveal-up">
+        <h3 class="exploring-title">Currently Exploring</h3>
+        <div class="exploring-grid">
+          <div class="exploring-card">JavaScript</div>
+          <div class="exploring-card">Frontend Development</div>
+          <div class="exploring-card">Backend Development</div>
+          <div class="exploring-card">Blockchain</div>
+          <div class="exploring-card">Web3</div>
+          <div class="exploring-card">DeFi</div>
+          <div class="exploring-card">AI + Web3</div>
+          <div class="exploring-card">On-Chain Analytics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-container">
+      <div class="section-heading reveal-up">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">Have a project in mind, or just want to talk about web development and Web3? My inbox is always open.</p>
+
+          <ul class="contact-list">
+            <li><span class="contact-icon" aria-hidden="true">✉</span><a href="mailto:njokudivine94@gmail.com">njokudivine94@gmail.com</a></li>
+            <li><span class="contact-icon" aria-hidden="true">𝕏</span><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+            <li><span class="contact-icon" aria-hidden="true">⌥</span><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+            <li><span class="contact-icon" aria-hidden="true">in</span><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal-right" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+            <span class="form-error" id="name-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email">
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form-error" id="message-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-name">Divine</div>
+    <p class="footer-role">Web Developer • Web3 Enthusiast</p>
+
+    <div class="footer-socials">
+      <a href="#" aria-label="X / Twitter">𝕏</a>
+      <a href="#" aria-label="GitHub">⌥</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="mailto:njokudivine94@gmail.com" aria-label="Email">✉</a>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Divine. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/Portfolio.js"></script>
+</body>
+</html>
